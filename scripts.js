@@ -9,7 +9,7 @@ const searchInput = document.querySelector("#searchbar > input")
 const searchButton = document.querySelector("#searchbar > button")
 
 const lookup = {"/":"/","deepl":"https://deepl.com/","reddit":"https://reddit.com/","maps":"https://maps.google.com/"}
-const engine = "duckduckgo"
+const engine = "google"
 const engineUrls = {
   deepl: "https://www.deepl.com/translator#-/-/",
   duckduckgo: "https://duckduckgo.com/?q=",
@@ -47,7 +47,7 @@ searchButton.onclick = search
  * inject bookmarks into html
  */
 
-const bookmarks = [{"id":"ybJrFH35FmdI0dOc","label":"college","bookmarks":[{"id":"vuljUCL4UQ9HuZ2J","label":"pearson","url":"https://portal.mypearson.com"},{"id":"imShpXZboXqLF39K","label":"blackboard","url":"https://mymasonportal.gmu.edu"},{"id":"eKPGRPmaTcyDzb6f","label":"piazza","url":"https://piazza.com/class/l6mwp0wb7b57eq"}]},{"id":"3HM2nYTbdZB1kMXp","label":"personal","bookmarks":[{"id":"eKpfFbNAcXC8YEKJ","label":"calendar","url":"https://calendar.google.com/calendar"},{"id":"uPORlgoCHNKJMoxk","label":"github","url":"https://github.com"},{"id":"CaWzmdttITSGGR1C","label":"drive","url":"https://drive.google.com"}]},{"id":"GNOOfV8rRLmN6lPI","label":"media","bookmarks":[{"id":"VPAowMC2dsqY0vQ3","label":"youtube","url":"https://www.youtube.com"},{"id":"82TRQKHy9Uu3rUmh","label":"twitch","url":"https://twitch.com"},{"id":"gMOT2wHDfyMzMzuy","label":"reddit","url":"https://reddit.com"}]},{"id":"mcVg4fL2hZja0yW7","label":"misc","bookmarks":[{"id":"nD2swQlN9cR5TMhv","label":"studio","url":"https://studio.youtube.com"},{"id":"5Gqj1OX6fMpsOXvN","label":"mail","url":"https://outlook.office.com/mail/?actSwt=true"}]}]
+const bookmarks = [{"id":"mKc8iAcb1clFZ5rn","label":"mason","bookmarks":[{"id":"Rdmd5zmh7xCPIzpT","label":"BlackBoard","url":"https://mymasonportal.gmu.edu/"},{"id":"hU5rIVzbYogCDMFl","label":"Piazza","url":"https://piazza.com/class/ld3mz1609q1kb"}]},{"id":"9NU2bS9KmRmJMXRd","label":"email","bookmarks":[{"id":"ICw3EADsxqCilZCy","label":"gmail","url":"https://mail.google.com/mail/u/0/#inbox"},{"id":"hCqU7pKQtHZcVP8p","label":"outlook - gmu","url":"https://outlook.office.com/mail/"}]},{"id":"lHwi5WPoESibMmJ1","label":"projects","bookmarks":[{"id":"BKfs5vB8t42zwdL6","label":"Phalerovia","url":"https://phalerovia.github.io/"},{"id":"uSeYxdDxLZudu8eZ","label":"github","url":"https://github.com/"},{"id":"orDqUgB8wsVWMX8e","label":"zerohero","url":"https://github.com/karpathy/nn-zero-to-hero"}]},{"id":"LVqUFb489FX3fQCA","label":"hobbies","bookmarks":[{"id":"V4kVcOXFVkSboRAL","label":"factoryfive","url":"https://www.factoryfive.com/"},{"id":"NjkZoYvnKI1dqFeX","label":"chess.com","url":"https://www.chess.com/"}]}]
 
 const createGroupContainer = () => {
   const container = document.createElement("div")
