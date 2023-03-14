@@ -1,0 +1,159 @@
+{
+  "yags-general": {
+    "img": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.cUhYN5AnE8mSsdr_8e3zMgHaHa%26pid%3DApi&f=1&ipt=1c49ef14c03d70770c868e1f6715e267cb3f089db7acc1d0b2c769b7101eb627&ipo=images",
+    "title": "",
+    "displayImg": true,
+    "font": "Quicksand",
+    "enableFonts": false
+  },
+  "yags-search": {
+    "placeholder": "Search the web",
+    "engine": "google",
+    "forwardingLookup": {
+      "/": "/",
+      "deepl": "https://deepl.com/",
+      "reddit": "https://reddit.com/",
+      "maps": "https://maps.google.com/"
+    }
+  },
+  "yags-theme": {
+    "inverted": false,
+    "color": {
+      "name": "custom",
+      "bg": {
+        "shade": "#131316",
+        "base": "#18181B",
+        "surface": "#1D1D20",
+        "highlight": "#222226"
+      },
+      "fg": {
+        "shade": "#969696",
+        "base": "#BBBBBB",
+        "surface": "#E0E0E0",
+        "highlight": "#FFFFFF"
+      },
+      "primary": {
+        "bg": "#151E26",
+        "base": "#2A3D4C",
+        "fg": "#3F5B72"
+      },
+      "secondary": {
+        "bg": "#261D15",
+        "base": "#4C392A",
+        "fg": "#72563F"
+      },
+      "palette": {
+        "red": "#E06C75",
+        "green": "#98C379",
+        "yellow": "#E5C07B",
+        "blue": "#61AFEF",
+        "purple": "#C678DD",
+        "cyan": "#56B6C2",
+        "orange": "#FFBB7C"
+      }
+    },
+    "space": {
+      "smallest": "0.125rem",
+      "small": "0.5rem",
+      "medium": "1rem",
+      "large": "1.5rem",
+      "largest": "3rem"
+    }
+  },
+  "yags-surface": {
+    "shadow": {
+      "amount": 1,
+      "blur": 13,
+      "offset": 0,
+      "shadow": "0px 0px 13px #151E26"
+    },
+    "borderRadius": 26,
+    "maxWidth": 960
+  },
+  "yags-bookmarks": [
+    {
+      "id": "mKc8iAcb1clFZ5rn",
+      "label": "mason",
+      "bookmarks": [
+        {
+          "id": "Rdmd5zmh7xCPIzpT",
+          "label": "blackboard",
+          "url": "https://mymasonportal.gmu.edu/"
+        },
+        {
+          "id": "hU5rIVzbYogCDMFl",
+          "label": "piazza",
+          "url": "https://piazza.com/class/ld3mz1609q1kb"
+        },
+        {
+          "id": "tH1n0UWJZwM0qBL5",
+          "label": "phalerovia",
+          "url": "phalerovia.github.io/"
+        }
+      ]
+    },
+    {
+      "id": "9NU2bS9KmRmJMXRd",
+      "label": "organization",
+      "bookmarks": [
+        {
+          "id": "ICw3EADsxqCilZCy",
+          "label": "gmail",
+          "url": "https://mail.google.com/mail/u/0/#inbox"
+        },
+        {
+          "id": "hCqU7pKQtHZcVP8p",
+          "label": "outlook",
+          "url": "https://outlook.office.com/mail/"
+        },
+        {
+          "id": "VQJ5qk4i3JydSnGL",
+          "label": "to-do",
+          "url": "https://www.notion.so/ef808b5d73b44239aab4d8c177bd0df9?v=0deb06b5f45f4b629b163b018f3253f9"
+        }
+      ]
+    },
+    {
+      "id": "lHwi5WPoESibMmJ1",
+      "label": "projects",
+      "bookmarks": [
+        {
+          "id": "BKfs5vB8t42zwdL6",
+          "label": "excalidraw",
+          "url": "https://excalidraw.com"
+        },
+        {
+          "id": "uSeYxdDxLZudu8eZ",
+          "label": "github",
+          "url": "https://github.com/"
+        },
+        {
+          "id": "orDqUgB8wsVWMX8e",
+          "label": "zerohero",
+          "url": "https://github.com/karpathy/nn-zero-to-hero"
+        }
+      ]
+    },
+    {
+      "id": "LVqUFb489FX3fQCA",
+      "label": "misc",
+      "bookmarks": [
+        {
+          "id": "V4kVcOXFVkSboRAL",
+          "label": "factoryfive",
+          "url": "https://www.factoryfive.com/"
+        },
+        {
+          "id": "NjkZoYvnKI1dqFeX",
+          "label": "chess.com",
+          "url": "https://www.chess.com/"
+        },
+        {
+          "id": "TDjwtb8vaUsP8vNK",
+          "label": "youtube",
+          "url": "https://www.youtube.com/"
+        }
+      ]
+    }
+  ]
+}
