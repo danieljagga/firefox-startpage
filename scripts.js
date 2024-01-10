@@ -11,12 +11,12 @@ const searchButton = document.querySelector("#searchbar > button")
 const lookup = {"/":"/","deepl":"https://deepl.com/","reddit":"https://reddit.com/","maps":"https://maps.google.com/"}
 const engine = "google"
 const engineUrls = {
-  deepl: "https://www.deepl.com/translator#-/-/",
-  duckduckgo: "https://duckduckgo.com/?q=",
-  ecosia: "https://www.ecosia.org/search?q=",
-  google: "https://www.google.com/search?q=",
-  startpage: "https://www.startpage.com/search?q=",
-  youtube: "https://www.youtube.com/results?q=",
+  deepl: "https://www.deepl.com/translator#-/-/{query}",
+  duckduckgo: "https://duckduckgo.com/?q={query}",
+  ecosia: "https://www.ecosia.org/search?q={query}",
+  google: "https://www.google.com/search?q={query}",
+  startpage: "https://www.startpage.com/search?q={query}",
+  youtube: "https://www.youtube.com/results?q={query}",
 }
 
 const isWebUrl = value => {
@@ -31,7 +31,8 @@ const isWebUrl = value => {
 const getTargetUrl = value => {
   if (isWebUrl(value)) return value
   if (lookup[value]) return lookup[value]
-  return engineUrls[engine] + value
+  const url = engineUrls[engine] ?? engine
+  return url.replace("{query}", value)
 }
 
 const search = () => {
@@ -47,7 +48,7 @@ searchButton.onclick = search
  * inject bookmarks into html
  */
 
-const bookmarks = [{"id":"mKc8iAcb1clFZ5rn","label":"mason","bookmarks":[{"id":"Rdmd5zmh7xCPIzpT","label":"blackboard","url":"https://mymasonportal.gmu.edu/"},{"id":"hU5rIVzbYogCDMFl","label":"piazza","url":"https://piazza.com/class/ld3mz1609q1kb"},{"id":"tH1n0UWJZwM0qBL5","label":"phalerovia","url":"phalerovia.github.io/"}]},{"id":"9NU2bS9KmRmJMXRd","label":"organization","bookmarks":[{"id":"ICw3EADsxqCilZCy","label":"gmail","url":"https://mail.google.com/mail/u/0/#inbox"},{"id":"hCqU7pKQtHZcVP8p","label":"outlook","url":"https://outlook.office.com/mail/"},{"id":"VQJ5qk4i3JydSnGL","label":"to-do","url":"https://www.notion.so/ef808b5d73b44239aab4d8c177bd0df9?v=0deb06b5f45f4b629b163b018f3253f9"}]},{"id":"lHwi5WPoESibMmJ1","label":"projects","bookmarks":[{"id":"BKfs5vB8t42zwdL6","label":"excalidraw","url":"https://excalidraw.com"},{"id":"uSeYxdDxLZudu8eZ","label":"github","url":"https://github.com/"},{"id":"orDqUgB8wsVWMX8e","label":"zerohero","url":"https://github.com/karpathy/nn-zero-to-hero"}]},{"id":"LVqUFb489FX3fQCA","label":"misc","bookmarks":[{"id":"V4kVcOXFVkSboRAL","label":"factoryfive","url":"https://www.factoryfive.com/"},{"id":"NjkZoYvnKI1dqFeX","label":"chess.com","url":"https://www.chess.com/"},{"id":"TDjwtb8vaUsP8vNK","label":"youtube","url":"https://www.youtube.com/"}]}]
+const bookmarks = [{"id":"mKc8iAcb1clFZ5rn","label":"virginia tech","bookmarks":[{"id":"Rdmd5zmh7xCPIzpT","label":"one campus","url":"https://onecampus.vt.edu/"},{"id":"hU5rIVzbYogCDMFl","label":"hokie spa","url":"https://hokiespa.vt.edu/"},{"id":"EW6YWG9bEXFlhqhY","label":"piazza","url":"https://piazza.com/class/ld3mz1609q1kb"}]},{"id":"9NU2bS9KmRmJMXRd","label":"organization","bookmarks":[{"id":"ICw3EADsxqCilZCy","label":"gmail","url":"https://mail.google.com/mail/u/0/#inbox"},{"id":"hCqU7pKQtHZcVP8p","label":"outlook","url":"https://outlook.office.com/mail/"},{"id":"4VcbBSzbrFZKDWiO","label":"to-do","url":"https://www.notion.so/Tasks-Spring-2024-f863fd66560f49b5b62da1983e60f726"}]},{"id":"lHwi5WPoESibMmJ1","label":"projects","bookmarks":[{"id":"BKfs5vB8t42zwdL6","label":"excalidraw","url":"https://excalidraw.com/"},{"id":"uSeYxdDxLZudu8eZ","label":"github","url":"https://github.com/"},{"id":"orDqUgB8wsVWMX8e","label":"zerohero","url":"https://github.com/karpathy/nn-zero-to-hero"}]},{"id":"LVqUFb489FX3fQCA","label":"hobbies","bookmarks":[{"id":"V4kVcOXFVkSboRAL","label":"factoryfive","url":"https://www.factoryfive.com/"},{"id":"NjkZoYvnKI1dqFeX","label":"chess.com","url":"https://www.chess.com/"},{"id":"Zg7G2Ee7X0E63Xbw","label":"youtube","url":"https://www.youtube.com/"}]}]
 
 const createGroupContainer = () => {
   const container = document.createElement("div")
