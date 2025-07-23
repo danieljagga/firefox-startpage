@@ -1,0 +1,77 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(80, 76, 76); /* light, soft background */
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+.greeting {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #10a37f;
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-form {
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: aliceblue;
+  background-color: rgb(131, 128, 124);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #10a37f; /* soft green */
+  box-shadow: 0 0 0 3px rgba(16, 163, 127, 0.2);
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.footer a {
+  margin: 0 10px;
+  /* color: #888; */
+  color: rgb(195, 152, 105);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: #10a37f; /* Soft green hover effect */
+}
